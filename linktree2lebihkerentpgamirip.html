@@ -29,11 +29,10 @@
 
     .subtitle {
       font-size: 0.9rem;
-      font-weight: 600;
+      font-weight: bolder;
       color: #ccc;
       margin-bottom: 30px;
     }
-
     .custom-button {
       background-color: #1c1c1c;
       color: white;
@@ -97,6 +96,25 @@
   transform: scale(1.01);
 }
 
+    .video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin: 20px 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
     a {
       color: inherit !important;  /*agar saat di hover embed link tidak berganti warna*/
       text-decoration: none !important;
@@ -111,8 +129,12 @@
   <div class="main-title">NIKI: BUZZ WORLD TOUR JAKARTA</div>
   <div class="subtitle">14 & 16 February 2025 Promoted by ALOKA</div>
 
-  <!-- Button 1 -->
-  <a href="https://www.tiket.com/to-do" class="custom-button">
+  <a href="https://youtu.be/RM1OLBXZTd4?si=vwY3rR7IlNiON6Ss" target="_blank">
+    <img src="thumbnail niki.png" alt="Video Thumbnail" style="width:100%; max-width:400px;">
+  </a>
+  
+   <!-- Button 1 -->
+   <a href="https://www.tiket.com/to-do" class="custom-button">
     <img src="14 feb.png" class="icon-img button-icon" alt="14 Icon">
     BCA Presale Ticket (25 Nov - 10.00 WIB)
     <i class="fa fa-ellipsis-v"></i>
